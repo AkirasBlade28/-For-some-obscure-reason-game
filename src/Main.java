@@ -1,8 +1,6 @@
-//comments are done 'by the flow'
 import java.util.Scanner;
 
 public class Main {
-
 	public static void main(String[] args) {
 		System.out.println("Welcome to 'For Some Obscure Reason' game!\n\n");
 		System.out.println("To play enter four digit number in range from 0 to 9.");
@@ -10,12 +8,10 @@ public class Main {
 		
 		Scanner in= new Scanner(System.in);//input
 		
-		BoolOrACowMain(in);
-		 		
+		BoolOrACowMain(in);	 		
 	}
 
 	private static void BoolOrACowMain(Scanner in) {
-		/////////////flow
 				
 				boolean trys = false;
 				
@@ -24,8 +20,7 @@ public class Main {
 				
 				do{									 //    loop for user unput
 					int bullScore = 0;
-					int cowScore = 0;
-					
+					int cowScore = 0;			
 					String digStr=dig+"";	//  in java string has powerful methods calls 
 										   //   we can convert, as shown here, number literals of type int
 										  //    to a type str, with it's length being the number of digits
@@ -81,7 +76,6 @@ public class Main {
 	
 	static int ranDigit() // generated random number
 	{
-		
 		double ran= 1000+Math.random()*9000;
 		int ran00=(int)ran;
 		return ran00;
@@ -90,8 +84,6 @@ public class Main {
 	static int digSep(int inNum)// digit separator method
 	{ 
 		int inNum00 = inNum%10;	
-		
 	    return inNum00;		
-	}
-	
+	}	
 }
